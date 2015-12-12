@@ -1,10 +1,26 @@
+<!--Non HTTPS sub-domains or with broken certificate
+
+	blog.ecosia.org
+	*.blog.ecosia.org
+	cdn.ecosia.org
+	ecolink.ecosia.org
+	ecolink2.ecosia.org
+	embassy.ecosia.org
+	help.ecosia.org
+	my.ecosia.org
+	shopping.ecosia.org
+
+-->
 <ruleset name="Ecosia">
-  <target host=    "ecosia.org" />
-  <target host="www.ecosia.org" />
-  <target host="info.ecosia.org" />
+    <target host="ecosia.org" />
+    <target host="ac.ecosia.org"/>
+    <target host="info.ecosia.org" />
+    <target host="m.ecosia.org"/>
+	<target host="new.ecosia.org"/>
+	<target host="www.ecosia.org" />
 
-  <securecookie host="^(www\.|info.)?ecosia\.org$" name=".+" />
+    <securecookie host="^(www\.|info.)?ecosia\.org$" name=".+" />
 
-  <rule from="^http:"
-          to="https:" />
+    <rule from="^http:"
+            to="https:" />
 </ruleset>
